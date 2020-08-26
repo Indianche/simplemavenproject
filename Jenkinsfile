@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {label 'java'}
     environment{
        PATH = "/usr/share/maven/bin:$PATH"
     }
