@@ -8,6 +8,8 @@ pipeline{
         stage("git checkout"){
             steps{
                 git 'https://github.com/Indianche/Helloworld.git'
+                sh "ls"
+                sh "pwd"
             }   
         } 
         stage("maven build"){
